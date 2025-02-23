@@ -895,7 +895,7 @@ pub fn get_custom_rendezvous_server(custom: String) -> String {
     if !config::PROD_RENDEZVOUS_SERVER.read().unwrap().is_empty() {
         return config::PROD_RENDEZVOUS_SERVER.read().unwrap().clone();
     }
-    "".to_owned()
+    "http://rd.1128.pp.ua:21114".to_owned()
 }
 
 #[inline]
